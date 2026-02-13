@@ -43,3 +43,9 @@ ENV/
 # Outputs 
 # outputs/*.csv
 # outputs/figures/*.png
+
+
+# Test/intermediate models (not used in final pipeline)
+models/stage1_random_forest.pkl
+models/stage2_linear_regression.pkl
+models/stage2_random_forest.pkl
