@@ -1,4 +1,4 @@
-# 🌌 Exoplanet Habitability Platform
+# Exoplanet Habitability Platform
 
 An end-to-end platform for predicting exoplanet habitability using machine learning.
 
@@ -8,15 +8,15 @@ An end-to-end platform for predicting exoplanet habitability using machine learn
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 A full-stack platform that predicts the habitability of exoplanets using a 3-stage machine learning pipeline. The system analyzes planetary and stellar characteristics to calculate the Earth Similarity Index (ESI) and classify planets as Low, Moderate, or High habitability.
 
 ---
 
-## 📊 Current Status
+## Current Status
 
-### ✅ Phase 1: ML Pipeline (COMPLETE)
+### Phase 1: ML Pipeline (COMPLETE)
 
 **Results:**
 - **Dataset:** 5,986 exoplanets analyzed
@@ -25,10 +25,10 @@ A full-stack platform that predicts the habitability of exoplanets using a 3-sta
 
 **Pipeline Performance:**
 - Stage 1 (Mass): R² = 0.0755
-- Stage 2 (Temperature): R² = 0.8465 🔥
+- Stage 2 (Temperature): R² = 0.8465 
 - Stage 3 (ESI): R² = 0.6205
 
-### 🚧 Phase 2: V2 Optimization (IN PROGRESS)
+### Phase 2: V2 Optimization (IN PROGRESS)
 
 - [ ] Log transform for mass prediction
 - [ ] Feature engineering (density, gravity)
@@ -37,14 +37,14 @@ A full-stack platform that predicts the habitability of exoplanets using a 3-sta
 
 **Target:** Stage 1 R² > 0.50 (+6x improvement)
 
-### 🔜 Phase 3: Backend API (PLANNED)
+### Phase 3: Backend API (PLANNED)
 
 - [ ] FastAPI service
 - [ ] REST API endpoints
 - [ ] Model serving
 - [ ] Docker deployment
 
-### 🔜 Phase 4: Frontend UI (PLANNED)
+### Phase 4: Frontend UI (PLANNED)
 
 - [ ] React application
 - [ ] Interactive predictions
@@ -53,7 +53,7 @@ A full-stack platform that predicts the habitability of exoplanets using a 3-sta
 
 ---
 
-## 🏗️ Pipeline Architecture
+## Pipeline Architecture
 ```
 Input Features
     ↓
@@ -83,11 +83,11 @@ Input Features
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 exoplanet-habitability/
 │
-├── notebooks/              # ML Development (Phase 1 ✅)
+├── notebooks/              # ML Development (Phase 1)
 │   ├── 01_EDA.ipynb
 │   ├── 02_Stage1_Mass_Prediction.ipynb
 │   ├── 03_Stage2_Temperature_Prediction.ipynb
@@ -114,7 +114,7 @@ exoplanet-habitability/
 
 ---
 
-## 🚀 Quick Start (ML Pipeline)
+## Quick Start (ML Pipeline)
 
 ### Prerequisites
 - Python 3.9+
@@ -143,7 +143,7 @@ jupyter notebook
 
 ---
 
-## 🛠️ Technologies
+## Technologies
 
 ### Current (Phase 1)
 - **Python 3.14**
@@ -160,15 +160,15 @@ jupyter notebook
 
 ---
 
-## 📊 Results & Visualizations
+## Results & Visualizations
 
 ### Performance Summary
 
 | Stage | Model | Test R² | Test MAE | Status |
 |-------|-------|---------|----------|--------|
-| Stage 1 (Mass) | Linear Regression | 0.0755 | 0.8025 | ⚠️ Needs improvement |
-| Stage 2 (Temp) | Random Forest | 0.8465 | 117.80 K | ✅ Excellent |
-| Stage 3 (ESI) | Formula-based | 0.6205 | 0.1177 | ✅ Good |
+| Stage 1 (Mass) | Linear Regression | 0.0755 | 0.8025 | Needs improvement |
+| Stage 2 (Temp) | Random Forest | 0.8465 | 117.80 K | Excellent |
+| Stage 3 (ESI) | Formula-based | 0.6205 | 0.1177 | Good |
 
 ### Classification Results
 ```
@@ -183,16 +183,16 @@ High        0       5      41
 ```
 
 ### Key Insights
-- ✅ 83.4% of ESI predictions within ±0.2 of actual values
-- ✅ High habitability planets: 89.1% accuracy
-- ✅ Zero High planets misclassified as Low (safe predictions)
-- ⚠️ Stage 1 limited by high skewness (target for V2)
+- 83.4% of ESI predictions within ±0.2 of actual values
+- High habitability planets: 89.1% accuracy
+- Zero High planets misclassified as Low (safe predictions)
+- Stage 1 limited by high skewness (target for V2)
 
-> 📊 **Visualizations:** Run notebooks to generate plots in `/outputs/figures/`
+> **Visualizations:** Run notebooks to generate plots in `/outputs/figures/`
 
 ---
 
-## 🎓 Methodology
+## Methodology
 
 ### Earth Similarity Index (ESI)
 ```
@@ -214,7 +214,7 @@ Earth reference values:
 
 ---
 
-## 🔜 Roadmap
+## Roadmap
 
 - [x] Phase 1: ML Pipeline MVP
 - [ ] Phase 1.5: V2 Optimization
@@ -225,43 +225,30 @@ Earth reference values:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! This is a learning project in active development.
 
 ---
 
-## 📄 License
+## License
 
 
 ---
 
-## 📧 Contact
+## Contact
 
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 
 ---
 
-**Current Phase:** ML Pipeline Optimization (V2) 🚧
+**Current Phase:** ML Pipeline Optimization (V2)
 ```
 
 ---
 
-## 🎯 GitHub Topics:
 ```
-exoplanets
-machine-learning
-python
-scikit-learn
-habitability
-earth-similarity-index
-astronomy
-full-stack
-fastapi
-react
-data-science
-nasa
