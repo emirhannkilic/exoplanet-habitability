@@ -30,8 +30,15 @@ A full-stack platform that predicts the habitability of exoplanets using a 3-sta
 
 ### Phase 2: V2 Optimization (IN PROGRESS)
 
-- [ ] Log transform for mass prediction
+**Log Transform Experiment (Complete):**
+- Skewness reduced: 3.6 → 1.6
+- Stage 1 improvement: R² 0.075 → **0.112** (1.5x better)
+- Linear Regression more stable than Random Forest
+- Gains modest - need feature engineering
+
+**Next Steps:**
 - [ ] Feature engineering (density, gravity)
+- [ ] Polynomial features
 - [ ] Advanced models
 - [ ] Hyperparameter tuning
 
