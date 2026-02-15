@@ -66,6 +66,8 @@ The pipeline was trained and evaluated on a dataset of **5,986 confirmed exoplan
 
 ### Pipeline Performance (V2)
 
+**Evaluated on test set: 195 samples**
+
 | Stage | Model | Metric | Score |
 |-------|-------|--------|-------|
 | Stage 1 (Mass) | Linear Regression + Log Transform | Log-scale R² | 0.3173 |
