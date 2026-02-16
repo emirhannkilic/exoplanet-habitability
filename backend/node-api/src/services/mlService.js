@@ -55,8 +55,8 @@ const predict = async (features) => {
 };
 
 /**
- * Check ML service health
- * @returns {Promise<Object>} Health status from ML service
+ * Check if the ML service is running
+ * @returns {Promise<Object>} 
  */
 const checkHealth = async () => {
     try {

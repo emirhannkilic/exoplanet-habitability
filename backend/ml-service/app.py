@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
-# Model paths – models live in the repo root's models/ directory
+# Model paths
 # ---------------------------------------------------------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODELS_DIR = os.path.join(BASE_DIR, "..", "..", "models")
@@ -31,7 +31,6 @@ stage2_model = None
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """Load ML models once at startup."""
     global stage1_model, stage2_model
 
     logger.info("Loading Stage 1 model from %s", STAGE1_PATH)
@@ -46,7 +45,7 @@ async def lifespan(app: FastAPI):
     stage2_model = joblib.load(STAGE2_PATH)
     logger.info("Stage 2 loaded: %s", type(stage2_model).__name__)
 
-    yield  # application runs
+    yield  # app runs
 
     logger.info("Shutting down ML service")
 
@@ -74,7 +73,7 @@ class PredictResponse(BaseModel):
 
 
 # ---------------------------------------------------------------------------
-# ESI helpers – exact reproduction of notebook logic
+# ESI helpers
 # ---------------------------------------------------------------------------
 EARTH_RADIUS = 1.0   # Earth radii
 EARTH_MASS = 1.0     # reference (pipeline convention)

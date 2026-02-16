@@ -12,7 +12,6 @@ const REQUIRED_FIELDS = Object.keys(FEATURE_RULES);
 
 const predict = async (req, res) => {
     try {
-        // --- Validate required fields ---
         const missing = REQUIRED_FIELDS.filter((f) => req.body[f] === undefined || req.body[f] === null);
         if (missing.length > 0) {
             return res.status(400).json({
@@ -22,7 +21,6 @@ const predict = async (req, res) => {
             });
         }
 
-        // --- Validate types & ranges ---
         const errors = [];
         const features = {};
 
@@ -45,7 +43,7 @@ const predict = async (req, res) => {
             });
         }
 
-        // --- Call ML service ---
+        // --- ML service ---
         const mlResult = await mlService.predict(features);
 
         if (!mlResult.success) {
