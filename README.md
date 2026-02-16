@@ -245,9 +245,8 @@ The dataset contains **5,986 confirmed exoplanets** with properties including:
 
 - [x] Phase 1: ML Pipeline MVP (notebooks 01-04)
 - [x] Phase 2: V2 Optimization (notebooks 05-09)
-- [ ] Phase 3: Backend API (FastAPI model serving)
-- [ ] Phase 4: Frontend UI (interactive predictions)
-- [ ] Phase 5: Deployment (Docker + cloud)
+
+This project focuses on the ML pipeline only.
 
 ---
 
