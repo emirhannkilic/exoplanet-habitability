@@ -40,6 +40,21 @@ ENV/
 .env
 .env.local
 
+# Backend-specific ignores
+# Node API local dependencies and logs
+backend/node-api/node_modules/
+backend/node-api/npm-debug.log*
+backend/node-api/yarn-debug.log*
+backend/node-api/yarn-error.log*
+backend/node-api/pnpm-debug.log*
+backend/node-api/.env
+
+# ML service local runtime artifacts
+backend/ml-service/.venv/
+backend/ml-service/__pycache__/
+backend/ml-service/.pytest_cache/
+backend/ml-service/.mypy_cache/
+
 # Outputs 
 # outputs/*.csv
 # outputs/figures/*.png
